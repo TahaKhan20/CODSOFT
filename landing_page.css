@@ -1,0 +1,605 @@
+*{
+    margin: 0px;
+    font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.navbar{
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 94%;
+    height: 50px;
+    padding: 8px 3%;
+    
+}
+.navbar .left{
+    display: flex;
+    width: 500px;
+    background-color: transparent;
+    height: 40px;
+    margin-top: 2px;
+}
+.navbar .right{
+    display: flex;
+    width: 350px;
+    height: 40px;
+    margin-top: 2px;
+    margin-left: 450px;
+    background-color: transparent;
+    height: 40px;
+}
+.navbar .left .a1, .navbar .right .a1, .navbar .right .dropbtn, .navbar .left .dropbtn{
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 17px;
+    color: inherit;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.navbar .right #sign{
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+}
+.navbar .left .a1:hover, .navbar .right .a1:hover, .navbar .right .dropbtn:hover, .navbar .left .dropbtn:hover{
+    background-color: #333;
+    border-radius: 20px;
+}
+.navbar .right #sign:hover{
+    background-color: #ccc;
+}
+.left .dropdown {
+    max-height: 500px;
+  }
+.left .dropbtn{
+    border: inherit; 
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    margin-top: -5px;  
+}
+
+.right .dropdown {
+    max-height: 500px;
+  }
+.right .dropbtn{
+    border: inherit; 
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    margin-top: -5px;  
+}
+
+
+  .right .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    font-size: 13px;
+    overflow: auto;
+    color: #000;
+    margin-top: 9px;
+    z-index:99999;
+  }
+  .left .dropdown-content{
+    width: 200px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    height: 250px;
+    font-size: 13px;
+    overflow: auto;
+    color: #000;
+    margin-top: 9px;
+    z-index:99999;
+  }
+  .right .dropdown-content .a {
+    float: none;
+    display: block;
+    justify-content:center;  
+    color: #111;
+    padding: 4px 5px;
+    background-color: white;
+    text-decoration: none;
+    margin: 2px;
+    margin-top: 1px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .left .dropdown-content .a {
+    height: 21px;
+    font-size: 15px;
+    padding: 4px 20px;
+    color: #777;
+    float: none;
+    display: block;
+    justify-content:center;
+    background-color: white;
+    text-decoration: none;
+    margin: 2px;
+  }
+  .right .dropdown-content img{
+    width: 20px;
+    margin-right: 10%;
+  }    
+  .dropdown-content .a:hover {
+    background-color: #ccc;
+  }
+
+
+.img1{
+    width: 100%;
+    height: 675px;
+    background-image: url(https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1349,h_667/v1653688465/assets/29/74ec2f-a727-47e1-9695-c78f8dadee5f/original/DotCom_Update_Earner_bg2x.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.box2 {
+    width: 100%;
+    height: 500px;
+    position: relative; /* Change to relative */
+    background-color: transparent;
+    z-index: 0;
+    transform: translateY(0%); /* Add this */
+    transition: transform 0.5s ease-in;
+}
+
+.box2.scrolled{
+    transform: translateY(30%); /* Add this */
+}
+
+
+.box2 .img2{
+    background-image: url(https://media.istockphoto.com/id/479643782/photo/new-york-city-skyline-midtown-and-empire-state-building.jpg?s=612x612&w=0&k=20&c=VeR439NYIPasKBZMjNl5JlcymIW0wz0J0FJ7lCtxztM=);
+    background-position: left 67%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    min-width: 100%;
+    
+    min-height: 60%;
+    display: flex;
+    z-index: -1;
+}
+.box2 .container2 .text{
+    padding: 6% 7%;
+    
+}
+.box2 .container2 .text p{
+    margin-top: 2%;
+}
+.box2 .container2 .text button{
+    margin-top: 2.5%;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #070707;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: -1;
+}
+.container1{
+    background-color: #fff;
+    z-index: 9999;
+    width: 570px;
+    height: 500px;
+    top: 20%;
+    left: 8%;
+    position: absolute;
+    border-radius: 2px;
+}
+.container1 .text{
+    padding: 2% 10%;
+}
+.container1 .text .mainhead{
+    font-size: 48px;
+    font-family: inherit;
+    font-weight: 620;
+    line-height: 52px;
+    margin-top: 10%;
+}
+.container1 .text p{
+    margin-top: 8%;
+    color: #444;
+    font-size: 16px;
+}
+.container1 .text button{
+    margin-top: 8%;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #070707;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.navbar1{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: space-evenly;
+    
+}
+.navbar1 a{
+    display: inline-block;
+    width: 20%;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    text-decoration: none;
+    padding: 3% 10%;
+    color: #111;
+    font-weight: 500;
+    text-align: center;
+}
+.navbar1 a:hover{
+    color: #555;
+}   
+.box3{
+    display: flex;
+    width: 90%;
+    margin: 3% 5%;
+    height: 650px;
+    position: relative;
+    background-color: white;
+    transition: transform 0.5s ease-in;
+    transform: translateY(-31%); /* Add this */
+    justify-content: space-around;
+    z-index: 0;
+}
+.box3 .cont{
+    display: block;
+    width: 47%;
+    margin: 1.5%;
+    background-color: white;
+    
+}
+.box3.scrolled {
+    transform: translateY(0%); /* Add this */
+}
+.img3{
+    width: 100%;
+    height: 60%;
+}
+.box3 .cont .text h3{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    margin: 3% 0.5%;
+}
+.box3 .cont .text p{
+    font-size: 16px;
+    font-weight: 420;
+    margin: 3% 0.5%;
+    margin-bottom: 6%;
+}
+.box3 .cont .text .l1,.box3 .cont .text .l2,.box3 .cont .text .l3 {
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    margin-left: 0.5%;
+    text-decoration: none;
+    position: relative; /* Add this to create a positioning context for ::before */
+}
+.box3 .cont .text .l2{
+    margin-left: 8%;
+}
+.box3 .cont .text .l1::before, .box3 .cont .text .l2::before, .box3 .cont .text .l3::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    background-color: grey; /* Grey background line */
+    position: absolute;
+}
+.box3 .cont .text .l2::before,.box3 .cont .text .l2::after{
+    left: 0%;
+}
+.box3 .cont .text .l1::after, .box3 .cont .text .l2::after, .box3 .cont .text .l3::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: black; /* Black line that moves */
+    position: absolute;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.box3 .cont .text .l1:hover::after, .box3 .cont .text .l2:hover::after, .box3 .cont .text .l3:hover::after {
+    width: 100%;
+}
+.box4{
+    display: flex;
+    width: 90%;
+    margin: 0% 5%;
+    height: 230px;
+    justify-content:space-evenly;
+    background-color: white;
+    transition: transform 0.5s ease-in;
+    transform: translateY(-50%);
+    
+}
+
+.box4.scrolled {
+    transform: translateY(-120%); /* Add this */
+}
+.box4 .cont2{
+    display: block;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+.box4 .cont2 .text h3{
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    margin: 3% 0.5%;
+}
+.box4 .cont2 .text p{
+    font-size: 16px;
+    font-weight: 450;
+    margin: 3% 0.5%;
+    margin-bottom: 10%;
+    color: #333;
+}
+.box4 .cont2 .text .l1,.box4 .cont2 .text .l2,.box4 .cont2 .text .l3 {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    margin-left: 0.5%;
+    text-decoration: none;
+    position: relative; /* Add this to create a positioning context for ::before */
+}
+.box4 .cont2 .text .l1::before, .box4 .cont2 .text .l2::before, .box4 .cont2 .text .l3::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    background-color: grey; /* Grey background line */
+    position: absolute;
+}
+.box4 .cont2 .text .l1::after, .box4 .cont2 .text .l2::after, .box4 .cont2 .text .l3::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: black; /* Black line that moves */
+    position: absolute;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.box4 .cont2 .text .l1:hover::after, .box4 .cont2 .text .l2:hover::after, .box4 .cont2 .text .l3:hover::after {
+    width: 100%;
+}
+
+.box5{
+    height: 300px;
+    width: 90%;
+    padding: 5%;
+    background-color: #f2f2f2;
+    transition: transform;    
+    transform: translateY(-60%); /* Add this */
+
+}
+.box5 h1{
+    margin-bottom: 30px;
+    margin-left: 6%;
+    font-size: 36px;
+}
+.box5 .b1{
+    display: flex;
+    width: 95%;
+    margin: 0% 1.25%;
+    justify-content: space-evenly;
+    background-color: transparent;
+    height: 230px;
+}
+.box5 .b1 .cont{
+    display: flex;
+    width: 45%;
+    background-color: white;
+}
+.box5 .b1 .cont .image1{
+    width: 30%;
+    height: 90%;
+    margin: 8% 2.5%;
+}
+.box5 .b1 .cont .image1 img{
+    width: 100%;
+}
+.box5 .b1 .cont .text{
+    width: 60%;
+    background-color: white;
+    height: 50%;
+    margin: 16% 0%;
+}
+
+.box5 .b1 .cont .text h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+.box5 .b1 .cont .text p{
+    font-size: 17px;
+    color: #222;
+    font-weight: 400;
+    margin-left: 7%;
+    margin-top: -20px;
+}
+
+.box6 .c .line1, .box6 .c .line2 {
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700px;
+    color: #111;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative; /* Add this to create a positioning context for ::before */
+}
+
+.box6 .c .line1:hover, .box6 .c .line2:hover {
+    color: #555;
+}
+.box6 .c .line1::before, .box6 .c .line2::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -15px;
+    background-color: grey; /* Grey background line */
+    position: absolute;
+}
+.box6 .c .line1::after,.box6 .c .line2::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: black; /* Black line that moves */
+    position: absolute;
+    bottom: -15px;
+    transition: width 0.3s ease-in-out;
+}
+
+.box6  .c .line1:hover::after, .box6 .c .line2:hover::after {
+    width: 100%;
+}
+
+.box6{
+    display: flex;
+    height: 160px;
+    width: 90%;
+    background-color: white;
+    padding: 0% 5%;
+    transition: transform 0.5s ease-in;
+    transform: translateY(-110%);
+}
+.box6.scrolled{
+    transform: translateY(-140%); 
+
+}
+.box6 .c{
+    width: 40%;
+    height: 60%;
+    margin: 3% 5%;
+    background-color: white;
+}
+footer{
+    margin-top: -150px;
+}
+.f{
+    display:grid;
+    width: 90%;
+    height: 750px;
+    padding: 5%;
+    background-color: black;
+    transition: transform;
+    transform: translateY(0%);
+    font-family: inherit;
+}
+.f .a, .f a{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 3%;
+    margin-left: 2.5%;
+    cursor: pointer;  
+    text-decoration: none; 
+    line-height: 5px;
+}
+.f .a:hover{
+    text-decoration: underline;
+    
+}
+
+.f .f1{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    margin: 3% 0%;
+    color: white;
+}
+.f .f1 .col{
+    display: block;
+    width: 20%;
+    margin: 0% 2.5%;
+    background-color: black;
+}
+.f .f1 .col h1{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 50px;
+}
+.f .f1 .col a{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.f .f1 .col a:hover{
+    color: #bbb;
+}
+.f .f2{
+    display: flex;
+    background-color: black;
+    height: 30px;
+}
+.f .f2 img{
+    width: 18px;
+}
+.f .f2 a{
+    margin: 2%;
+    margin-right: 4%;
+    width: auto;
+    height: 16px;
+    padding: 1%;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.f .f2 a:hover{
+    background-color: #333;
+}
+.f .f3{
+    display: flex;
+    margin-top: 8%;
+    margin-left: 2%;
+    width: 270px;
+    justify-content: space-around;
+}
+.f .f3 img{
+    width: 120px;
+}
+.f .f4{
+    display: flex;
+    margin-top: 3%;
+    color: #aaa;
+}
+.f .f4 p{
+    font-size: 14px;
+    margin-left: 3%;
+    margin-right: 56%;
+}
+.f .f4 a{
+    font-size: 14px;
+    margin-left: 4%;
+    text-decoration: none;
+    color: inherit;
+}
+
+
