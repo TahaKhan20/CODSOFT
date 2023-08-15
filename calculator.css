@@ -1,0 +1,89 @@
+
+body{
+    height: 100%;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+.calculator{
+    display: block;
+    background-color: #333;
+    border: 1px solid #111;
+    border-radius: 15px;
+    width: 32%;
+    height: 520px;
+    margin: 0% 35%;
+    margin-top: 3.5%;
+}
+
+.display{
+    width: 90%;
+    height: 17.5%;
+    background-color: #eee;
+    margin: 8% auto;
+    border-radius: 10px;
+    color: #080808;
+    font-size: 200%;
+}
+
+.line{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 8%;
+    margin: 2% 5%;
+}
+
+.buttons{
+    width: 17%;
+    height: 80%;
+    background-color: #555;
+    color: #fff;
+    border-radius: 30px;
+    border: 0px solid transparent;
+    cursor: pointer;
+    font-size: 120%;
+}
+.buttons:hover{
+    background-color: #3a3a3a;
+}
+.clear{
+    background-color: rgba(224, 28, 2, 0.822);
+}
+
+@media screen and (max-width: 1200px) {
+    .calculator{
+        height: 480px;
+    }
+    .buttons{
+        font-size: 160%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .calculator{
+        height: 420px;
+    }
+    .buttons{
+        font-size: 120%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .calculator{
+        height: 360px;
+    }
+    .buttons{
+        font-size: 90%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .calculator{
+        height: 300px;
+    }
+    .buttons{
+        font-size: 60%;
+    }
+    .display{
+        font-size: 150%;
+    }
+}

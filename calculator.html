@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+        <h1>Calculator App</h1>
+        <div class="calculator">
+            <div class="display"></div>
+            <div class="line">
+                <button class="buttons" onclick="degre()" id="deg">Deg</button>
+                <button class="buttons" onclick="inv()" id = "inv">Inv</button>
+            </div>
+            
+            <div class="line">
+                <button class="buttons" onclick="disp()" id="sin">sin(</button>
+                <button class="buttons" onclick="disp()" id="cos">cos(</button>
+                <button class="buttons" onclick="disp()" id="tan">tan(</button>
+                <button class="buttons" onclick="disp()">log(</button>
+                <button class="buttons" onclick="disp()">e^(</button>
+            </div>
+            <div class="line">
+                <button class="buttons" onclick="disp()">()</button>
+                <button class="buttons" onclick="disp()">^</button>
+                <button class="buttons" onclick="disp()">%</button>
+                <button class="buttons" onclick="disp()">√</button>
+                <button class="buttons" onclick="disp()">!</button>
+            </div>
+            <div class="line">
+            <button class="buttons" onclick="disp()" id="7">7</button>
+            <button class="buttons" onclick="disp()" id="8">8</button>
+            <button class="buttons" onclick="disp()" id="9">9</button>
+            <button class="buttons clear" onclick="c()">C</button>
+            <button class="buttons clear" onclick="ac()">AC</button>
+        
+        </div>
+        <div class="line">
+            <button class="buttons" onclick="disp()" id="4">4</button>
+            <button class="buttons" onclick="disp()" id="5">5</button>
+            <button class="buttons" onclick="disp()" id="6">6</button>
+            <button class="buttons" onclick="disp()" id="14">x</button>
+            <button class="buttons" onclick="disp()" id="15">/</button>
+        </div>
+        <div class="line">
+            <button class="buttons" onclick="disp()" id="1">1</button>
+            <button class="buttons" onclick="disp()" id="2">2</button>
+            <button class="buttons" onclick="disp()" id="3">3</button>
+            <button class="buttons" onclick="disp()" id="11">+</button>
+            <button class="buttons" onclick="disp()" id="13">-</button>
+        </div>
+        <div class="line">
+            <button class="buttons" onclick="disp()" id="0">0</button>
+            <button class="buttons" onclick="disp()" id="10">.</button>
+            <button class="buttons" onclick="disp()" id="17">𝝿</button>
+            <button class="buttons" onclick="ans()" id="16">Ans</button>
+            <button class="buttons" onclick="Cal()" id="17">=</button>
+        </div>
+        </div>
+    </body>
+    <script src="calculator.js"></script>
+</html>
